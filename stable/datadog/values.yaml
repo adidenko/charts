@@ -176,3 +176,10 @@ kube-state-metrics:
 
     ## Ignored if rbac.create is true
     serviceAccountName: default
+
+custom_secret: {}
+# Provide custom secret if needed.
+# In case you already have a secret with Datadog API key and you want to use
+# it instead of creating new one, please define the 'custom_secret' hash.
+#   name: SECRET_NAME
+#   api_key: NAME_OF_KEY_IN_SECRET
